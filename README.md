@@ -12,3 +12,40 @@ This repository documents a five-day hands-on workshop covering the complete RTL
 - [Key Learnings](#Key-Learnings)
 - [Acknowledgements](#Acknowledgements)
 - [References](#References)
+## Introduction
+
+Your introduction goes here.
+
+## Day 1 – Introduction to Open-Source ASIC Design, OpenLANE and Sky130 PDK
+
+Day 1 content goes here.
+
+## Day 2 – Chip Floorplanning, Library Cells and Standard Cell Placement
+
+Day 2 content goes here.
+
+## Day 3 – Chip Floorplanning, Library Cells and Standard Cell Placement
+
+
+
+## Day 4 – Chip Floorplanning, Library Cells and Standard Cell Placement
+
+
+
+## Day 5 – Chip Floorplanning, Library Cells and Standard Cell Placement
+
+
+
+## Tools & Environment
+
+
+
+## Key Learnings
+
+
+
+## Acknowledgements
+
+
+
+## References
