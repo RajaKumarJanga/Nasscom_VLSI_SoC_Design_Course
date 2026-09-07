@@ -2,11 +2,7 @@
 This repository documents a five-day hands-on workshop covering the complete RTL-to-GDSII physical design flow using open-source EDA tools, including **OpenLane, Magic, ngspice, and OpenSTA**. The labs use the **SkyWater Sky130 PDK** and the `picorv32a` RISC-V core to demonstrate each stage of the physical design process, along with key concepts, practical steps, and results.
 ## Table of Contents
 
----
-
-- [Day 1 - Introduction to Open-Source ASIC Design, OpenLANE and Sky130 PDK](#day-1)
-
----  
+- [Day 1 - Introduction to Open-Source ASIC Design, OpenLANE and Sky130 PDK](#day-1) 
 
 - [Day 2 - Chip Floorplanning, Library Cells and Standard Cell Placement](#day-2)
 
@@ -42,6 +38,7 @@ This repository documents a five-day hands-on workshop covering the complete RTL
 <a id="day-1"></a>
 ## Day 1 - Introduction to Open-Source ASIC Design, OpenLANE and Sky130 PDK
 
+---  
 Day 1 content goes here.
 
 <a id="day-2"></a>
