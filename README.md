@@ -1,1 +1,1 @@
-# Nasscom_VLSI_SoC_Design_Course
+# Digital VLSI SoC Design and Planning — RTL to GDSII
