@@ -42,17 +42,21 @@ Day 2 content goes here.
 <a id="day-3"></a>
 ## Day 3 - Design and Characterization of Standard Cells using Magic and ngspice
 
+Day 3
 
-Day 2
---- 
+---
 
 <a id="day-4"></a>
 ## Day 4 - Pre-Layout Timing Analysis and Clock Tree Synthesis
+
+Day 4
 
 --- 
 
 <a id="day-5"></a>
 ## Day 5 - Final RTL to GDSII Flow: Power Distribution, Routing and Post-Route Timing Analysis
+
+Day 5
 
 --- 
 
