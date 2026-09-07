@@ -1,1 +1,2 @@
 # Digital VLSI SoC Design and Planning — RTL to GDSII
+This repository documents a five-day hands-on workshop covering the complete RTL-to-GDSII physical design flow using open-source EDA tools, including **OpenLane, Magic, ngspice, and OpenSTA**. The labs use the **SkyWater Sky130 PDK** and the `picorv32a` RISC-V core to demonstrate each stage of the physical design process, along with key concepts, practical steps, and results.
