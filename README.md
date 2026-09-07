@@ -25,7 +25,7 @@ This repository documents a five-day hands-on workshop covering the complete RTL
 <a id="day-1"></a>
 ## Day 1 - Introduction to Open-Source ASIC Design, OpenLANE and Sky130 PDK
 
----  
+
 Day 1 content goes here.
 
 --- 
@@ -33,13 +33,17 @@ Day 1 content goes here.
 <a id="day-2"></a>
 ## Day 2 - Chip Floorplanning, Library Cells and Standard Cell Placement
 
---- 
+
 
 Day 2 content goes here.
+
+---
 
 <a id="day-3"></a>
 ## Day 3 - Design and Characterization of Standard Cells using Magic and ngspice
 
+
+Day 2
 --- 
 
 <a id="day-4"></a>
@@ -70,4 +74,4 @@ Day 2 content goes here.
 <a id="references"></a>
 ## References
 
---- 
+
