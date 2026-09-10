@@ -1,8 +1,49 @@
 # Digital VLSI SoC Design and Planning — RTL to GDSII
-This repository documents a five-day hands-on workshop covering the complete RTL-to-GDSII physical design flow using open-source EDA tools, including **OpenLane, Magic, ngspice, and OpenSTA**. The labs use the **SkyWater Sky130 PDK** and the `picorv32a` RISC-V core to demonstrate each stage of the physical design process, along with key concepts, practical steps, and results.
-## Table of Contents
+This repository documents the transformation of the **PicoRV32A RISC-V core** from synthesizable RTL into a fabrication-ready GDSII layout. It combines physical-design theory, reproducible OpenLane labs, custom-cell characterization, timing analysis, and practical debugging into one continuous engineering narrative.
 
-- [Day 1 - Introduction to Open-Source ASIC Design, OpenLANE and Sky130 PDK](#day-1) 
+## Why this repository is different
+
+Physical design is easier to understand when every concept is connected to an action and every action leaves evidence. Each stage in this repository therefore follows four questions:
+
+| Lens | Question |
+|---|---|
+| **Concept** | What physical-design problem are we solving? |
+| **Action** | Which command or tool performs the work? |
+| **Evidence** | Which report, waveform, DEF, LEF, or layout proves the result? |
+| **Insight** | What should an engineer verify before moving forward? |
+
+The goal is not merely to complete the flow, but to understand how early design decisions affect area, timing, power, congestion, and manufacturability later.
+
+---
+
+## The silicon journey
+
+```mermaid
+flowchart TD
+    A["RTL design"] --> B["Logic synthesis"]
+    B --> C["Floorplan"]
+    C --> D["Placement"]
+    D --> E["Clock tree synthesis"]
+    E --> F["Power grid and routing"]
+    F --> G["Parasitic extraction and STA"]
+    G --> H["DRC, LVS and GDSII"]
+```
+
+| Stage | Primary question | Main artifact |
+|---|---|---|
+| RTL | Does the logic describe the intended behavior? | Verilog source |
+| Synthesis | Can the logic be mapped to real cells? | Gate-level netlist |
+| Floorplan | Can the design fit and connect efficiently? | Floorplan DEF |
+| Placement | Where should each standard cell be located? | Placement DEF |
+| CTS | Can the clock reach sequential cells with controlled skew? | CTS netlist/DEF |
+| Routing | Can every net be physically connected? | Routed DEF |
+| Sign-off | Is the design timed, legal, and manufacturable? | Reports and GDSII |
+
+---
+
+## Workshop roadmap
+
+- [Day 1 - Introduction to Open-Source ASIC Design, OpenLane and Sky130 PDK](#day-1) 
 
 - [Day 2 - Chip Floorplanning, Library Cells and Standard Cell Placement](#day-2)
 
@@ -22,11 +63,27 @@ This repository documents a five-day hands-on workshop covering the complete RTL
 
 ---
 
+## Toolchain
+
+| Tool | Role in the flow |
+|---|---|
+| **OpenLANE** | Orchestrates the RTL-to-GDSII flow |
+| **Yosys** | RTL synthesis |
+| **ABC** | Technology mapping and logic optimization |
+| **OpenROAD** | Floorplanning, placement, CTS, PDN, and routing |
+| **Magic** | Layout viewing, extraction, and DRC |
+| **ngspice** | Transistor-level simulation |
+| **OpenSTA** | Static timing analysis |
+| **Netgen** | Layout-versus-schematic comparison |
+| **SKY130A PDK** | Process rules, device models, and cell libraries |
+
+---
+
 <a id="day-1"></a>
-## Day 1 - Introduction to Open-Source ASIC Design, OpenLANE and Sky130 PDK
+## Day 1 - Introduction to Open-Source ASIC Design, OpenLane and Sky130 PDK
 
 
-Day 1 content goes here.
+The OpenLane framework integrates multiple open-source EDA tools into a single automated ASIC implementation flow.
 <p align="center">
   <img src="images/day1/OpenLane_design_flow.png" width="700">
   <br>
