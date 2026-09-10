@@ -82,12 +82,26 @@ flowchart TD
 <a id="day-1"></a>
 ## Day 1 - Introduction to Open-Source ASIC Design, OpenLane and Sky130 PDK
 
+## 1.1 What is inside a chip?
+
+An integrated circuit contains a silicon **die**, a central **core** for logic, and an I/O region that connects internal signals to the package. The core may contain:
+
+- **Standard cells** — reusable logic gates and sequential elements.
+- **Macros** — larger predesigned blocks such as memories.
+- **Foundry IP** — process-dependent blocks such as SRAMs, PLLs, and analog structures.
+
+At RTL, the design expresses behavior and register transfers. Synthesis converts that description into interconnected cells selected from a technology library. This gate-level netlist is the bridge between logical design and physical implementation.
+
+## 1.2 Why an open PDK matters
+
+A Process Design Kit connects circuit design to a real manufacturing process. It provides design rules, device models, layer definitions, extraction data, and characterized standard-cell libraries. The SKY130 PDK enables an end-to-end educational ASIC flow without proprietary design data.
+
 
 The OpenLane framework integrates multiple open-source EDA tools into a single automated ASIC implementation flow.
 <p align="center">
   <img src="images/day1/OpenLane_design_flow.png" width="700">
   <br>
-  <em>Figure 1: OpenLane_design_flow.png layout</em>
+  <em>Figure 1: OpenLane_design_flow.png </em>
 </p>
 --- 
 
