@@ -99,7 +99,7 @@ A Process Design Kit connects circuit design to a real manufacturing process. It
 
 The OpenLane framework integrates multiple open-source EDA tools into a single automated ASIC implementation flow.
 <p align="center">
-  <img src="images/day1/OpenLane_design_flow.png" width="700">
+  <img src="images/day1/OpenLane_design_flow.png" width="900">
   <br>
   <em>Figure 1: OpenLane_design_flow.png </em>
 </p>
@@ -113,7 +113,7 @@ make mount
 package require openlane 1.0.2
 ```
 <p align="center">
-  <img src="images/day1/OpenLane_commands.png" width="800">
+  <img src="images/day1/OpenLane_commands.png" width="1000">
   <br>
   <em>Figure 1: OpenLane_commands.png </em>
 </p>
@@ -125,7 +125,7 @@ Flop ratio = (value of dxftp/total number of cells) * 100
            = (1613/15762)*100 = 10.233%
 ```
 <p align="center">
-  <img src="images/day1/flop_ratio.png" width="900">
+  <img src="images/day1/flop_ratio.png" width="1000">
   <br>
   <em>Figure 1: dxftp & toal number of cells.png </em>
 </p>
