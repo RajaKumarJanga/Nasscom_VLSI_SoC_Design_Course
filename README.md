@@ -90,9 +90,9 @@ An integrated circuit contains a silicon **die**, a central **core** for logic, 
 - **Macros** — larger predesigned blocks such as memories.
 - **Foundry IP** — process-dependent blocks such as SRAMs, PLLs, and analog structures.
 
-At RTL, the design expresses behavior and register transfers. Synthesis converts that description into interconnected cells selected from a technology library. This gate-level netlist is the bridge between logical design and physical implementation.
+At RTL, the design expresses behavior and register transfers. Synthesis converts that description into interconnected cells selected from a technology library. This gate-level netlist bridges logical design and physical implementation.
 
-## Why an open PDK matters
+## Why does an open PDK matter?
 
 A Process Design Kit connects circuit design to a real manufacturing process. It provides design rules, device models, layer definitions, extraction data, and characterized standard-cell libraries. The SKY130 PDK enables an end-to-end educational ASIC flow without proprietary design data.
 
@@ -118,6 +118,11 @@ package require openlane 1.0.2
   <em>Figure 1: OpenLane_commands.png </em>
 </p>
 
+
+```bash
+run_synthesis
+```
+
 ## What is flop ratio?
 It is the ratio of standard cells to the total number of cells.
 ```
@@ -134,8 +139,13 @@ Flop ratio = (value of dxftp/total number of cells) * 100
 
 ## Day 2 - Chip Floorplanning, Library Cells and Standard Cell Placement
 
+```bash
+run_floorplan
+```
 
-
+```bash
+run_placement
+```
 Day 2 content goes here.
 
 ---
