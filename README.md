@@ -28,7 +28,7 @@ This repository documents a five-day hands-on workshop covering the complete RTL
 
 Day 1 content goes here.
 <p align="center">
-  <img src="images/OpenLane_design_flow.png" width="700">
+  <img src="images/day1/OpenLane_design_flow.png" width="700">
   <br>
   <em>Figure 1: OpenLane_design_flow.png layout</em>
 </p>
