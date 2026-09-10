@@ -146,7 +146,7 @@ Floorplanning determines the **size, shape, and organization of the chip's core 
 
 Two important parameters are:
 
-- ** Utilization Factor** = Area Occupied by Netlist / Total Core Area
+- **Utilization Factor** = Area Occupied by Netlist / Total Core Area
   - A utilization factor of approximately **0.5–0.6** is commonly used to leave sufficient space for buffers, routing, and other physical design requirements.
 
 - **Aspect Ratio** = Core Height / Core Width
@@ -284,7 +284,7 @@ magic -T /home/vscode/.ciel/sky130A/libs.tech/magic/sky130A.tech \
 <a id="day-3"></a>
 ## Day 3 - Design and Characterization of Standard Cells using Magic and ngspice
 
-```markdown
+
 ### CMOS Inverter — SPICE Deck
 
 To characterize a **CMOS standard cell**, a SPICE netlist is created to describe the electrical behavior of the circuit.
@@ -336,7 +336,7 @@ A simplified overview of the process is:
 
 8. **Final Passivation**  
    - Apply a protective **passivation layer** over the completed chip to protect the circuitry from contamination and physical damage.
-```
+
 
 
 ---
