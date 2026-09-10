@@ -109,6 +109,8 @@ The OpenLane framework integrates multiple open-source EDA tools into a single a
 ```bash
 cd /home/vscode/Desktop/OpenLane
 make mount
+./flow.tcl -interactive
+package require openlane 1.0.2
 ```
 <p align="center">
   <img src="images/day1/OpenLane_commands.png" width="700">
@@ -116,6 +118,12 @@ make mount
   <em>Figure 1: OpenLane_commands.png </em>
 </p>
 
+## What is flop ratio?
+It is the ratio of standard cells to the total number of cells.
+```
+Flop ratio = (value of dxftp/total number of cells) * 100
+           = (1613/15762)*100 = 10.233%
+```
 <a id="day-2"></a>
 ## Day 2 - Chip Floorplanning, Library Cells and Standard Cell Placement
 
