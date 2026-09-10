@@ -284,7 +284,60 @@ magic -T /home/vscode/.ciel/sky130A/libs.tech/magic/sky130A.tech \
 <a id="day-3"></a>
 ## Day 3 - Design and Characterization of Standard Cells using Magic and ngspice
 
-Day 3
+```markdown
+### CMOS Inverter — SPICE Deck
+
+To characterize a **CMOS standard cell**, a SPICE netlist is created to describe the electrical behavior of the circuit.
+
+The SPICE deck typically includes:
+
+- **PMOS and NMOS transistor models**
+- **Transistor dimensions (W/L ratios)**
+- **Supply voltage (VDD)**
+- **Input stimulus**
+- **Output load capacitance**
+
+The transient response obtained from SPICE simulation is used to evaluate the timing characteristics of the cell.
+
+#### Key Timing Parameters
+
+- **Rise Time** — Time taken for the output voltage to transition from **20% to 80%** of its final value.
+- **Fall Time** — Time taken for the output voltage to transition from **80% to 20%** of its final value.
+- **Propagation Delay** — Time difference between the **50% transition point of the input** and the corresponding **50% transition point of the output**.
+
+---
+
+### 16-Mask CMOS Fabrication Process — Brief Overview
+
+CMOS fabrication involves a sequence of masking, deposition, oxidation, implantation, and etching steps to create the transistors and their interconnections on a silicon substrate.
+
+A simplified overview of the process is:
+
+1. **Substrate Selection**  
+   - Begin with a **p-type, high-resistivity silicon substrate**.
+
+2. **Active Region Formation**  
+   - Define the active regions using **field oxidation** and a **Si₃N₄ mask**.
+
+3. **N-Well and P-Well Formation**  
+   - Create the required wells using **ion implantation**.
+
+4. **Gate Oxide Formation**  
+   - Grow a thin layer of **SiO₂** to form the gate oxide.
+
+5. **Polysilicon Gate Formation**  
+   - Deposit and pattern **polysilicon** to create the transistor gates.
+
+6. **Source and Drain Formation**  
+   - Form the source and drain regions using implantation techniques such as **LDD and halo implantation**.
+
+7. **Contact and Metal Formation**  
+   - Create contacts and deposit metal layers to electrically connect the transistors.
+
+8. **Final Passivation**  
+   - Apply a protective **passivation layer** over the completed chip to protect the circuitry from contamination and physical damage.
+```
+
 
 ---
 
