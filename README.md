@@ -111,7 +111,7 @@ cd /home/vscode/Desktop/OpenLane
 make mount
 ```
 <p align="center">
-  <img src="images/day1/OpenLane_design_flow.png" width="700">
+  <img src="images/day1/OpenLane_commands.png" width="700">
   <br>
   <em>Figure 1: OpenLane_commands.png </em>
 </p>
