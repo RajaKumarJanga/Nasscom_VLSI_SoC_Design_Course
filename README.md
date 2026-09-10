@@ -349,6 +349,67 @@ magic -T sky130A.tech sky130_inv.mag &
 ```
 
 
+<p align="center">
+  <img src="images/day3/vsdstdcell_files.png" width="1000">
+  <br>
+  <em>Figure 13: Files inside vsdstdcell </em>
+</p>
+
+<p align="center">
+  <img src="images/day3/inverter_layout.png" width="1000">
+  <br>
+  <em>Figure 14: Custom_Inverter layout </em>
+</p>
+
+<p align="center">
+  <img src="images/day3/spiceext_commands.png" width="1000">
+  <br>
+  <em>Figure 15: Commands to extract SPICE file </em>
+</p>
+
+<p align="center">
+  <img src="images/day3/extr_spice.png" width="1000">
+  <br>
+  <em>Figure 16: Extracted SPICE file </em>
+</p>
+
+<p align="center">
+  <img src="images/day3/update_spice.png" width="1000">
+  <br>
+  <em>Figure 17: Updated SPICE file </em>
+</p>
+
+### Command to run ngspice simulation
+
+```
+ngspice sky130_inv.spice
+```
+
+```
+plot y vs time a
+```
+
+<p align="center">
+  <img src="images/day3/ngspice_commands.png" width="1000">
+  <br>
+  <em>Figure 18: Commands to start ngspice </em>
+</p>
+
+<p align="center">
+  <img src="images/day3/ngspice_plot.png" width="1000">
+  <br>
+  <em>Figure 19: Plot y vs time a </em>
+</p>
+
+<p align="center">
+  <img src="images/day3/ngspice_plot.png" width="1000">
+  <br>
+  <em>Figure 20: Plot y vs time a </em>
+</p>
+
+
+
+
 
 
 
