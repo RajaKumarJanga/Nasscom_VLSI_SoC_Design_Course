@@ -277,8 +277,6 @@ magic -T /home/vscode/.ciel/sky130A/libs.tech/magic/sky130A.tech \
   <em>Figure 12: Zoomed version of Placement layout showing standard cells </em>
 </p>
 
-
-
 ---
 
 <a id="day-3"></a>
@@ -297,7 +295,7 @@ The SPICE deck typically includes:
 - **Input stimulus**
 - **Output load capacitance**
 
-The transient response obtained from SPICE simulation is used to evaluate the timing characteristics of the cell.
+The transient response from SPICE simulation is used to evaluate the cell's timing characteristics.
 
 #### Key Timing Parameters
 
@@ -336,6 +334,23 @@ A simplified overview of the process is:
 
 8. **Final Passivation**  
    - Apply a protective **passivation layer** over the completed chip to protect the circuitry from contamination and physical damage.
+
+
+## Lab — Cloning and Characterizing a Custom Inverter Cell
+
+### Cloning the Standard Cell Repository
+
+```
+git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+```
+
+```
+magic -T sky130A.tech sky130_inv.mag &
+```
+
+
+
+
 
 
 
