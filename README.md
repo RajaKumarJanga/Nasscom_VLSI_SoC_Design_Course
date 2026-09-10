@@ -124,7 +124,14 @@ It is the ratio of standard cells to the total number of cells.
 Flop ratio = (value of dxftp/total number of cells) * 100
            = (1613/15762)*100 = 10.233%
 ```
+<p align="center">
+  <img src="images/day1/flop_ratio.png" width="700">
+  <br>
+  <em>Figure 1: dxftp & toal number of cells.png </em>
+</p>
 <a id="day-2"></a>
+
+
 ## Day 2 - Chip Floorplanning, Library Cells and Standard Cell Placement
 
 
