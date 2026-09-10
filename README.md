@@ -101,7 +101,7 @@ The OpenLane framework integrates multiple open-source EDA tools into a single a
 <p align="center">
   <img src="images/day1/OpenLane_design_flow.png" width="900">
   <br>
-  <em>Figure 1: OpenLane_design_flow.png </em>
+  <em>Figure 1: OpenLane_design_flow </em>
 </p>
 
 ## Lab — Running OpenLane for picorv32a
@@ -115,7 +115,7 @@ package require openlane 1.0.2
 <p align="center">
   <img src="images/day1/OpenLane_commands.png" width="1000">
   <br>
-  <em>Figure 2: OpenLane_commands.png </em>
+  <em>Figure 2: OpenLane_commands </em>
 </p>
 
 ## Command to run synthesis
@@ -133,13 +133,13 @@ Flop ratio = (value of dxftp/total number of cells) * 100
 <p align="center">
   <img src="images/day1/flop_ratio.png" width="1000">
   <br>
-  <em>Figure 3: dxftp & toal number of cells.png </em>
+  <em>Figure 3: Number of dxftp cells & toal number of cells </em>
 </p>
 
 <a id="day-2"></a>
 ## Day 2 - Chip Floorplanning, Library Cells and Standard Cell Placement
 
-```markdown
+
 ## Chip Floorplanning — Core Area and Utilization
 
 Floorplanning determines the **size, shape, and organization of the chip's core area** and establishes where major design components will be placed.
@@ -184,7 +184,7 @@ Input and output pins are placed along the **chip boundary**, with their locatio
 Pins are positioned close to the logic they communicate with whenever possible to improve routing efficiency.
 
 The region between the **core boundary and die boundary** is typically restricted from standard-cell placement. This placement blockage reserves space for I/O-related structures and prevents automated placement from using areas intended for boundary-level resources.
-```
+
 ### Lab - Floorplan and Placement
 
 ## Command to run floorplan
@@ -203,7 +203,7 @@ It is the entire chip area.
 <p align="center">
   <img src="images/day2/Die_Area.png" width="1000">
   <br>
-  <em>Figure 5: Die_Area.png  </em>
+  <em>Figure 5: Die_Area  </em>
 </p>
 
 After this completes, we can inspect the DEF file that was generated:
@@ -212,12 +212,6 @@ After this completes, we can inspect the DEF file that was generated:
 cd results/floorplan/
 less picorv32a.def
 ```
-
-<p align="center">
-  <img src="images/day2/Die_Area.png" width="1000">
-  <br>
-  <em>Figure 5: Die_Area.png  </em>
-</p>
 
 ## Command to view floorplan in Magic
 
@@ -268,19 +262,19 @@ magic -T /home/vscode/.ciel/sky130A/libs.tech/magic/sky130A.tech \
 <p align="center">
   <img src="images/day2/placement_command.png" width="1000">
   <br>
-  <em>Figure 10: Running placement.png </em>
+  <em>Figure 10: Running placement </em>
 </p>
 
 <p align="center">
   <img src="images/day2/placement.png" width="1000">
   <br>
-  <em>Figure 11: Placement layout.png </em>
+  <em>Figure 11: Placement layout </em>
 </p>
 
 <p align="center">
   <img src="images/day2/Zoom_standcellplaceview.png" width="1000">
   <br>
-  <em>Figure 12: Zoomed version of Placement layout showing standard cells.png </em>
+  <em>Figure 12: Zoomed version of Placement layout showing standard cells </em>
 </p>
 
 
