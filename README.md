@@ -115,16 +115,17 @@ package require openlane 1.0.2
 <p align="center">
   <img src="images/day1/OpenLane_commands.png" width="1000">
   <br>
-  <em>Figure 1: OpenLane_commands.png </em>
+  <em>Figure 2: OpenLane_commands.png </em>
 </p>
 
-
+## Command to run synthesis
 ```bash
 run_synthesis
 ```
+After synthesis, we calculate the flop ratio for a sanity check.
 
 ## What is flop ratio?
-It is the ratio of standard cells to the total number of cells.
+It is the ratio of D Flip-Flops to the total number of cells.
 ```
 Flop ratio = (value of dxftp/total number of cells) * 100
            = (1613/15762)*100 = 10.233%
@@ -132,21 +133,157 @@ Flop ratio = (value of dxftp/total number of cells) * 100
 <p align="center">
   <img src="images/day1/flop_ratio.png" width="1000">
   <br>
-  <em>Figure 1: dxftp & toal number of cells.png </em>
+  <em>Figure 3: dxftp & toal number of cells.png </em>
 </p>
+
 <a id="day-2"></a>
-
-
 ## Day 2 - Chip Floorplanning, Library Cells and Standard Cell Placement
 
+```markdown
+## Chip Floorplanning — Core Area and Utilization
+
+Floorplanning determines the **size, shape, and organization of the chip's core area** and establishes where major design components will be placed.
+
+Two important parameters are:
+
+- ** Utilization Factor** = Area Occupied by Netlist / Total Core Area
+  - A utilization factor of approximately **0.5–0.6** is commonly used to leave sufficient space for buffers, routing, and other physical design requirements.
+
+- **Aspect Ratio** = Core Height / Core Width
+  - An aspect ratio of **1** represents a square core, while other values result in a rectangular core.
+
+---
+
+## Pre-Placed Cells and Decoupling Capacitors
+
+**Pre-placed cells**, such as memories, PLLs, and complex IP blocks, are positioned and fixed before automated placement begins.
+
+Their locations are determined based on factors such as **connectivity and power requirements**.
+
+**Decoupling capacitors (decaps)** are placed near these cells to act as **local charge reservoirs**. They help compensate for voltage fluctuations caused by switching activity and provide a more stable power supply to nearby circuits.
+
+---
+
+### Power Planning — Mesh and Ring
+
+Power planning ensures reliable distribution of **VDD and VSS** throughout the chip.
+
+A typical power distribution network consists of:
+
+- **Power Rings** — Surround the core and provide a strong VDD/VSS supply path.
+- **Power Mesh** — Distributes power across the core using horizontal and vertical metal layers.
+
+Together, the power ring and mesh provide nearby power connections to standard cells, helping reduce **IR drop** and **electromigration (EM) risk**.
+
+---
+
+### Pin Placement and Logical Cell Blockage
+
+Input and output pins are placed along the **chip boundary**, with their locations determined primarily by design connectivity.
+
+Pins are positioned close to the logic they communicate with whenever possible to improve routing efficiency.
+
+The region between the **core boundary and die boundary** is typically restricted from standard-cell placement. This placement blockage reserves space for I/O-related structures and prevents automated placement from using areas intended for boundary-level resources.
+```
+### Lab - Floorplan and Placement
+
+## Command to run floorplan
 ```bash
 run_floorplan
 ```
+<p align="center">
+  <img src="images/day2/floorplan_command.png" width="1000">
+  <br>
+  <em>Figure 4: Running floorplan  </em>
+</p>
+
+## What is Die Area?
+It is the entire chip area.
+
+<p align="center">
+  <img src="images/day2/Die_Area.png" width="1000">
+  <br>
+  <em>Figure 5: Die_Area.png  </em>
+</p>
+
+After this completes, we can inspect the DEF file that was generated:
+
+```bash
+cd results/floorplan/
+less picorv32a.def
+```
+
+<p align="center">
+  <img src="images/day2/Die_Area.png" width="1000">
+  <br>
+  <em>Figure 5: Die_Area.png  </em>
+</p>
+
+## Command to view floorplan in Magic
+
+```bash
+magic -T /home/vscode/.ciel/sky130A/libs.tech/magic/sky130A.tech \
+  lef read ../../tmp/merged.nom.lef \
+  def read picorv32a.def &
+```
+
+<p align="center">
+  <img src="images/day2/floorplan.png" width="1000">
+  <br>
+  <em>Figure 6: Floorplan layout  </em>
+</p>
+
+<p align="center">
+  <img src="images/day2/zoom_floorplan.png" width="1000">
+  <br>
+  <em>Figure 7: Zoomed version of floorplan layout  </em>
+</p>
+
+<p align="center">
+  <img src="images/day2/floorplan_equidispins.png" width="1000">
+  <br>
+  <em>Figure 8: IO pins equidistance view  </em>
+</p>
+
+<p align="center">
+  <img src="images/day2/standardcells.png" width="1000">
+  <br>
+  <em>Figure 9: Standard cells  </em>
+</p>
+
+## Command to run placement
 
 ```bash
 run_placement
 ```
-Day 2 content goes here.
+
+## Command to view placement in Magic
+
+```bash
+magic -T /home/vscode/.ciel/sky130A/libs.tech/magic/sky130A.tech \
+  lef read ../../tmp/merged.nom.lef \
+  def read picorv32a.def &
+```
+
+<p align="center">
+  <img src="images/day2/placement_command.png" width="1000">
+  <br>
+  <em>Figure 10: Running placement.png </em>
+</p>
+
+<p align="center">
+  <img src="images/day2/placement.png" width="1000">
+  <br>
+  <em>Figure 11: Placement layout.png </em>
+</p>
+
+<p align="center">
+  <img src="images/day2/Zoom_standcellplaceview.png" width="1000">
+  <br>
+  <em>Figure 12: Zoomed version of Placement layout showing standard cells.png </em>
+</p>
+
+
 
 ---
 
