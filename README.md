@@ -460,7 +460,7 @@ From the waveform, the falling transition time is as follows:
 
 ```bash
 Fall transition time = Time taken for output to fall to 20% - Time taken for output to fall to 80%
-                     = 8.05376ns - 4.09213ns = 3.961ns = 4ns
+                     = 8.05211ns - 8.0951ns = 0.04ns
 ```
 
 
