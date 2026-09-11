@@ -428,8 +428,8 @@ plot y vs time a
 From the waveform, the rising transition time is as follows: 
 
 ```Rise transition time = Time taken for output to rise to 80% - Time taken for output to rise to 20%
-                     = 2.245798ns - 2.24579ns = 0.064ns
-```
+                     = 2.245798ns - 2.24579ns = 0.064ns```
+
 
 
 
