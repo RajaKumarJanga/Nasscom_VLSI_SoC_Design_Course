@@ -463,6 +463,46 @@ Fall transition time = Time taken for output to fall to 20% - Time taken for out
                      = 8.05211ns - 8.0951ns = 0.04ns
 ```
 
+Cell raise Delay(Propagation delay):
+<p align="center">
+  <img src="images/day3/cell_rise_delay.png" width="1000">
+  <br>
+  <em>Figure 25: 50% of the input value & 50% of rising output </em>
+</p>
+
+<p align="center">
+    <img src="images/day3/cell_rise_delay_plot.png" width="1000">
+    <br>
+    <em>Figure 25: Cell rise delay waveform </em> 
+</p>
+
+From the waveform, the cell rise delay is as follows: 
+
+```bash
+Cell rise delay(propagation delay)  = Time taken for output to rise to 50% - Time taken for input to reach 50% of its value
+                     = 6.21018ns - 6.14965ns = 0.061ns
+```
+
+
+Cell fall Delay(Propagation delay):
+<p align="center">
+  <img src="images/day3/cell_fall_delay.png" width="1000">
+  <br>
+  <em>Figure 25: 50% of the input value & 50% of falling output </em>
+</p>
+
+<p align="center">
+    <img src="images/day3/cell_fall_delay_plot.png" width="1000">
+    <br>
+    <em>Figure 25: Cell fall delay waveform </em> 
+</p>
+
+From the waveform, the cell fall delay is as follows: 
+
+```bash
+Cell fall delay(propagation delay)  = Time taken for output to fall to 50% - Time taken for input to reach 50% of its value
+                     = 8.07728ns - 8.05014ns = 0.02714ns
+```
 
 
 
