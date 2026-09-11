@@ -444,6 +444,18 @@ Rise transition time = Time taken for output to rise to 80% - Time taken for out
     <em>Figure 24: Waveform </em> 
 </p>
 
+<p align="center">
+  <img src="images/day3/fall_trns_20per.png" width="1000">
+  <br>
+  <em>Figure 24: 20% of the maximum value @ Falling transition </em>
+</p>
+
+<p align="center">
+    <img src="images/day3/fall_trns_20perplot.png" width="1000">
+    <br>
+    <em>Figure 25: Waveform </em> 
+</p>
+
 From the waveform, the falling transition time is as follows: 
 
 ```bash
