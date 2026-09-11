@@ -295,7 +295,7 @@ The SPICE deck typically includes:
 - **Input stimulus**
 - **Output load capacitance**
 
-The SPICE simulation transient response is used to evaluate the cell's timing characteristics.
+The SPICE simulation transient response evaluates the cell's timing characteristics.
 
 #### Key Timing Parameters
 
@@ -364,7 +364,7 @@ magic -T sky130A.tech sky130_inv.mag &
 <p align="center">
   <img src="images/day3/spiceext_commands.png" width="1000">
   <br>
-  <em>Figure 15: Commands to extract SPICE file </em>
+  <em>Figure 15: Commands to extract a SPICE file </em>
 </p>
 
 <p align="center">
@@ -420,7 +420,7 @@ plot y vs time a
 </p>
 
 <p align="center">
-    <img src="images/day3/rise_trns_80per_plot.png" width="1000">
+    <img src="images/day3/rise_trns_80perplot.png" width="1000">
     <br>
     <em>Figure 23: Waveform </em> 
 </p>
