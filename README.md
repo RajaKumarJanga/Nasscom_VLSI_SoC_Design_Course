@@ -295,7 +295,7 @@ The SPICE deck typically includes:
 - **Input stimulus**
 - **Output load capacitance**
 
-The transient response from SPICE simulation is used to evaluate the cell's timing characteristics.
+The SPICE simulation transient response is used to evaluate the cell's timing characteristics.
 
 #### Key Timing Parameters
 
@@ -398,13 +398,21 @@ plot y vs time a
 <p align="center">
   <img src="images/day3/ngspice_plot.png" width="1000">
   <br>
-  <em>Figure 19: Plot y vs time a </em>
+  <em>Figure 19: Plot y vs. time a </em>
 </p>
 
 <p align="center">
-  <img src="images/day3/ngspice_plot.png" width="1000">
-  <br>
-  <em>Figure 20: Plot y vs time a </em>
+  <b>20% of maximum value @ Rising transition</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Wave form</b>
+</p>
+
+<p align="center">
+  <a href="images/rise_trns_20per.png">
+    <img src="images/rise_trns_20per.png" width="49%">
+  </a>
+  <a href="images/rise_trns_20per_plot.png">
+    <img src="images/rise_trns_20per_plot.png" width="49%">
+  </a>
 </p>
 
 
