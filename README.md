@@ -407,11 +407,11 @@ plot y vs time a
 </p>
 
 <p align="center">
-  <a href="images/rise_trns_20per.png">
-    <img src="images/rise_trns_20per.png" width="49%">
+  <a href="images/day3/rise_trns_20per.png">
+    <img src="images/day3/rise_trns_20per.png" width="49%">
   </a>
-  <a href="images/rise_trns_20per_plot.png">
-    <img src="images/rise_trns_20per_plot.png" width="49%">
+  <a href="images/day3/rise_trns_20per_plot.png">
+    <img src="images/day3/rise_trns_20per_plot.png" width="49%">
   </a>
 </p>
 
