@@ -413,6 +413,17 @@ plot y vs time a
     <em>Figure 21: Waveform </em> 
 </p>
 
+<p align="center">
+  <img src="images/day3/rise_trns_80per.png" width="1000">
+  <br>
+  <em>Figure 22: 80% of the maximum value @ Rising transition </em>
+</p>
+
+<p align="center">
+    <img src="images/day3/rise_trns_80per_plot.png" width="1000">
+    <br>
+    <em>Figure 23: Waveform </em> 
+</p>
 
 
 
