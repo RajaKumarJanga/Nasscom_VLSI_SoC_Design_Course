@@ -402,17 +402,15 @@ plot y vs time a
 </p>
 
 <p align="center">
-  <b>20% of maximum value @ Rising transition</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Wave form</b>
+  <img src="images/day3/rise_trns_20per.png" width="1000">
+  <br>
+  <em>Figure 20: 20% of the maximum value @ Rising transition </em>
 </p>
 
 <p align="center">
-  <a href="images/day3/rise_trns_20per.png">
-    <img src="images/day3/rise_trns_20per.png" width="49%">
-  </a>
-  <a href="images/day3/rise_trns_20per_plot.png">
-    <img src="images/day3/rise_trns_20per_plot.png" width="49%">
-  </a>
+    <img src="images/day3/rise_trns_20per_plot.png" width="1000">
+    <br>
+    <em>Figure 21: Waveform </em> 
 </p>
 
 
